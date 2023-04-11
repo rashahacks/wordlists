@@ -13,7 +13,7 @@ Users can extract all the possible words(parameters, values, endpoints) by pipin
 * Save the Burpsuite Project, Copy all URLs from HTTP history or Sitemap.
 * Sort the URLs and Save in a text file.
 
-### Words Extraction:
+### Words Extraction (Example):
 ```
 cat burp_urls.txt| cut -d'/' -f4-100 | tr '/' '\n' | tr '?' '\n' | tr '&' '\n' | tr '=' '\n' | sort -u | tee wordlist.txt
 cat wordlist.txt | grep -v <words-t-remove> | tee final_wordlist.txt
