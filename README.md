@@ -3,10 +3,10 @@
 ## The Process of Adding Data:
 Users can extract all the possible words(parameters, values, endpoints) by piping the URLs from Burp project to few linux commands.
 
-1. Data Collection: Collect URLs in Burpsuite Project
-2. Words Extraction: Pipe the URLs to linux commands to extract words
-3. Cleaning: Remove researcher and program related words.
-4. Send a Pull Request.
+1. **Data Collection:** Collect URLs in Burpsuite Project
+2. **Words Extraction:** Pipe the URLs to linux commands to extract words
+3. **Cleaning:** Remove researcher and program related words.
+4. Send a **Pull Request.**
 
 ### Data Collection:
 * Hack at the organization for few days atleast and collect URLs with most of the application covered.
