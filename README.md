@@ -1,6 +1,15 @@
 # wordlists
 
-## The Process of Adding Data:
+## Download Wordlist
+```
+wget https://raw.githubusercontent.com/rashahacks/wordlists/main/master.txt -o <filename.txt>
+
+OR
+
+curl "https://raw.githubusercontent.com/rashahacks/wordlists/main/master.txt" -o <filename.txt>
+```
+
+## The Process of Adding Data
 Users can extract all the possible words(parameters, values, endpoints) by piping the URLs from Burp project to few linux commands.
 
 1. **Data Collection:** Collect URLs in Burpsuite Project
@@ -13,14 +22,14 @@ Users can extract all the possible words(parameters, values, endpoints) by pipin
 * Save the Burpsuite Project, Copy all URLs from HTTP history or Sitemap.
 * Sort the URLs and Save in a text file.
 
-### Words Extraction (Example):
+### Words Extraction (Example)
 ```
 cat burp_urls.txt| cut -d'/' -f4-100 | tr '/' '\n' | tr '?' '\n' | tr '&' '\n' | tr '=' '\n' | sort -u | tee wordlist.txt
 cat wordlist.txt | grep -v <words-t-remove> | tee final_wordlist.txt
 ```
 
-### Cleaning:
+### Cleaning
 Please clean the wordlist after removing your personal data and program related data (program name, sensitive words that can reveal program info).
 
-### Pull Request:
+### Pull Request
 After completing all previous phases, create a PR and the team will accept your PR within a week.
