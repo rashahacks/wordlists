@@ -3,9 +3,8 @@
 ## Download Wordlist
 ```
 wget https://raw.githubusercontent.com/rashahacks/wordlists/main/master.txt -o <filename.txt>
-
-OR
-
+```
+```
 curl "https://raw.githubusercontent.com/rashahacks/wordlists/main/master.txt" -o <filename.txt>
 ```
 
